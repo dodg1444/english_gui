@@ -4,6 +4,8 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QLabel>
+#include <QBoxLayout>
+#include <QTabBar>
 
 EngApp::EngApp(QWidget *parent, int height, int width) : QWidget(parent){
 
@@ -56,11 +58,9 @@ void EngApp::setUpWindow(int& height, int& width){
 
 
 void EngApp::start_option(){
-    QString filename = "test.txt";
-    QString transFilename = "trans.txt";
-    start *start_window = new start(this, filename, transFilename);
-    start_window->show();
-//    this->hide();
+    Union* union_class = new Union;
+    union_class->show();
+
 }
 
 
